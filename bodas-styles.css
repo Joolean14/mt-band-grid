@@ -132,7 +132,6 @@ body {
     text-align: center;
     font-family: Glacial;
     color: #827251;
-    /* width: 25%; */
 }
 
 .video-card1 {
@@ -185,19 +184,13 @@ form {
     grid-area: form;
     width: 90%;
     height: 90%;
-    /* padding: 2%; */
-    /* align-self: center; */
-    /* justify-self: center; */
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: center;
 }
 
-/* .form-body {
-    justify-self: center;
-    align-self: center;
-} */
+
 
 input[type=text] {
     border: none;
@@ -238,6 +231,124 @@ label {
 
 
 
-@media only screen and (min-width: 768px) {}
+@media only screen and (max-width: 768px) {
+    .nuestros-servicios {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat( 3, minmax(80%, 100%) );
+        grid-template-areas:
+            'title'
+            'card-container';
+        background-color: #827251;
+        height: auto;
+        width: 100%;
+    }
+    
+    .light-title {     
+        font-size: 8vw;
+    }
+    
+    .dark-title {
+        font-size: 8vw;
+    }
+    
+    .card-container {
+        grid-area: card-container;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat( auto-fit, minmax(80%, 100%) );
+        grid-template-areas:
+            'card1 card2 card3';
+        padding: 2%;
+    }
+    
+    .card {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+        grid-template-areas:
+            'card-image'
+            'card-text';
+        font-family: Glacial;
+        color: #fffef9;
+        grid-area: card1;
+        padding: 2%;
+    
+    }
+    
+    .card1 {
+        grid-area: card1;
+    }
+    
+    .card2 {
+        grid-area: card2;
+    }
+    
+    .card3 {
+        grid-area: card3;
+    }
+    
+    .card-img {
+        grid-area: card-image;
+        width: 90%;
+    }
+    
+    .card-text {
+        text-align: center;
+        grid-area: card-text;
+    }
+
+
+    .contacto {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 100%;
+        grid-template-areas:
+            'contact-content';
+        background-image: url(img/contacto.jpg);
+        opacity: 0.5;
+        
+    }
+    
+    .contact-content {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 25% 75%;
+        grid-template-areas:
+            'title'
+            'form';
+    }
+    
+    form {
+        grid-area: form;
+        width: 90%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+    }
+    
+    
+    
+    input[type=text] {
+        margin: 2%;
+    }
+    
+    label {
+        margin-bottom: 3%;
+        font-size: 5vw;
+        color: #fffef9;
+    }
+    
+    .send-button {
+        font-size: 8vw;
+        margin: 2%;
+    }
+    
+    .form-img {
+        display: none;
+    }
+}
 
 @media only screen and (min-width: 1024px) {}
