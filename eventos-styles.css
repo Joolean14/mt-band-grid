@@ -1,0 +1,66 @@
+@font-face {
+    font-family: Glacial;
+    src: url("font/glacial-indifference/GlacialIndifference-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Glacial-Italic;
+    src: url("font/glacial-indifference/GlacialIndifference-Italic.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Glacial-Bold;
+    src: url("font/glacial-indifference/GlacialIndifference-Bold.otf") format("opentype");
+}
+
+.light-title {
+    grid-area: title;
+    font-family: Glacial;
+    color: #fffef9;
+    border-bottom: solid 2px #fffef9;
+    text-align: center;
+    font-size: 4vw;
+}
+
+.dark-title {
+    grid-area: title;
+    display: inline-block;
+    font-family: Glacial;
+    color: #827251;
+    border-bottom: solid 2px #827251;
+    text-align: center;
+    font-size: 4vw;
+}
+
+:root {
+    --swiper-theme-color:#827251;
+   }
+
+
+.conexiones-musicales {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #fffef9;
+    height: 100%;
+    width: 100%;
+}
+
+.swiper-wrapper {
+    height: 50%;
+}
+
+.swiper-container {
+    width: 100%;
+    padding-top: 4%;
+    padding-bottom: 4%; 
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+}
+
