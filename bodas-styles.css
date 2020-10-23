@@ -234,6 +234,10 @@ label {
     /* margin: 2%; */
 }
 
+.send-button:hover {
+    opacity: 0.5;
+}
+
 .form-img {
     grid-area: contact-img;
     width: 100%;
