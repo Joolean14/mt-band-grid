@@ -54,7 +54,7 @@
 .swiper-container {
     width: 100%;
     padding-top: 4%;
-    padding-bottom: 4%; 
+    padding-bottom: 14%; 
 }
 
 .swiper-slide {
@@ -64,3 +64,7 @@
     height: 300px;
 }
 
+.swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+}
