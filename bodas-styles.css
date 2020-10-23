@@ -20,7 +20,7 @@ body {
 .nuestros-servicios {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 25% 75%;
+    grid-template-rows: 20% 80%;
     grid-template-areas:
         'title'
         'card-container';
@@ -33,19 +33,25 @@ body {
     grid-area: title;
     font-family: Glacial;
     color: #fffef9;
-    border-bottom: solid 2px #fffef9;
-    text-align: center;
+    border-bottom: solid 7px #fffef9;
     font-size: 4vw;
+    width: max-content;
+    justify-self: center;
+    align-self: center;
 }
+
+
 
 .dark-title {
     grid-area: title;
     display: inline-block;
     font-family: Glacial;
     color: #827251;
-    border-bottom: solid 2px #827251;
-    text-align: center;
+    border-bottom: solid 7px #827251;
     font-size: 4vw;
+    width: max-content;
+    justify-self: center;
+    align-self: center;
 }
 
 .card-container {
@@ -61,13 +67,12 @@ body {
 .card {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 50% 50%;
+    grid-template-rows: 40% 60%;
     grid-template-areas:
         'card-image'
         'card-text';
     font-family: Glacial;
     color: #fffef9;
-    grid-area: card1;
     padding: 2%;
 
 }
@@ -86,12 +91,18 @@ body {
 
 .card-img {
     grid-area: card-image;
-    width: 90%;
+    width: 65%;
+    justify-self: center;
 }
 
 .card-text {
+    /* margin-top: 4%; */
     text-align: center;
     grid-area: card-text;
+    width: 65%;
+    justify-self: center;
+    align-self: center;
+
 }
 
 /* ========================================================================================== */
@@ -99,7 +110,7 @@ body {
 .testimonios {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 25% 75%;
+    grid-template-rows: 20% 80%;
     grid-template-areas:
         'title'
         'video-card-container';
@@ -148,8 +159,9 @@ body {
 
 iframe {
     grid-area: video;
-    width: 100% !important;
-    height: auto !important;
+    width: auto !important;
+    height: 100% !important;
+    justify-self: center;
 }
 
 .video-card-text {
@@ -178,6 +190,7 @@ iframe {
     grid-template-areas:
         'title'
         'form';
+    padding: 5%;
 }
 
 form {
@@ -187,7 +200,7 @@ form {
     display: flex;
     flex-direction: column;
     justify-content: start;
-    align-items: center;
+    align-items: start;
 }
 
 
@@ -202,14 +215,14 @@ input[type=text] {
 label {
     color: #fffef9;
     font-family: Glacial;
-    margin-bottom: 3%;
-    font-size: 2vw;
+    /* margin-bottom: 2%; */
+    font-size: 1.5vw;
 }
 
 .send-button {
     font-family: Glacial;
     font-size: 2vw;
-    background-color: rgb(130, 114, 81, 0.7);
+    background-color: rgba(255, 254, 250, 0.3);
     color: #fffef9;
     cursor: pointer;
     border: none;
@@ -218,7 +231,7 @@ label {
     height: auto;
     justify-self: center;
     align-self: center;
-    margin: 2%;
+    /* margin: 2%; */
 }
 
 .form-img {
@@ -235,7 +248,7 @@ label {
     .nuestros-servicios {
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: repeat( 3, minmax(80%, 100%) );
+        grid-template-rows: repeat(3, minmax(80%, 100%));
         grid-template-areas:
             'title'
             'card-container';
@@ -243,25 +256,25 @@ label {
         height: auto;
         width: 100%;
     }
-    
-    .light-title {     
+
+    .light-title {
         font-size: 8vw;
     }
-    
+
     .dark-title {
         font-size: 8vw;
     }
-    
+
     .card-container {
         grid-area: card-container;
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: repeat( auto-fit, minmax(80%, 100%) );
+        grid-template-rows: repeat(auto-fit, minmax(80%, 100%));
         grid-template-areas:
             'card1 card2 card3';
         padding: 2%;
     }
-    
+
     .card {
         display: grid;
         grid-template-columns: 100%;
@@ -273,26 +286,26 @@ label {
         color: #fffef9;
         grid-area: card1;
         padding: 2%;
-    
+
     }
-    
+
     .card1 {
         grid-area: card1;
     }
-    
+
     .card2 {
         grid-area: card2;
     }
-    
+
     .card3 {
         grid-area: card3;
     }
-    
+
     .card-img {
         grid-area: card-image;
         width: 90%;
     }
-    
+
     .card-text {
         text-align: center;
         grid-area: card-text;
@@ -307,9 +320,9 @@ label {
             'contact-content';
         background-image: url(img/contacto.jpg);
         opacity: 0.5;
-        
+
     }
-    
+
     .contact-content {
         display: grid;
         grid-template-columns: 100%;
@@ -318,7 +331,7 @@ label {
             'title'
             'form';
     }
-    
+
     form {
         grid-area: form;
         width: 90%;
@@ -328,24 +341,23 @@ label {
         justify-content: start;
         align-items: center;
     }
-    
-    
-    
+
+
+
     input[type=text] {
         margin: 2%;
     }
-    
+
     label {
-        margin-bottom: 3%;
         font-size: 5vw;
         color: #fffef9;
     }
-    
+
     .send-button {
         font-size: 8vw;
         margin: 2%;
     }
-    
+
     .form-img {
         display: none;
     }
