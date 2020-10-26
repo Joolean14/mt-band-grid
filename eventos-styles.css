@@ -13,6 +13,18 @@
     src: url("font/glacial-indifference/GlacialIndifference-Bold.otf") format("opentype");
 }
 
+.conexiones-musicales {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 80%;
+    grid-template-areas:
+        'title'
+        'swiper';
+    background-color: #fffef9;
+    height: 100%;
+    width: 100%;
+}
+
 .light-title {
     grid-area: title;
     font-family: Glacial;
@@ -32,29 +44,15 @@
     font-size: 4vw;
 }
 
-:root {
-    --swiper-theme-color:#827251;
-   }
-
-
-.conexiones-musicales {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: #fffef9;
-    height: 100%;
+.swiper-container {
+    grid-area: swiper;
     width: 100%;
+    padding-top: 4%;
+    padding-bottom: 14%;
 }
 
 .swiper-wrapper {
     height: 50%;
-}
-
-.swiper-container {
-    width: 100%;
-    padding-top: 4%;
-    padding-bottom: 14%; 
 }
 
 .swiper-slide {
@@ -67,4 +65,44 @@
 .swiper-pagination-bullet {
     width: 15px;
     height: 15px;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    bottom: 20%;
+    width: 100%;
+}
+
+:root {
+    --swiper-theme-color: #827251;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .light-title {
+        font-size: 8vw;
+    }
+
+    .dark-title {
+
+        font-size: 8vw;
+    }
+
+    .swiper-container-horizontal>.swiper-pagination-bullets,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction {
+        bottom: 40%;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .swiper-container-horizontal>.swiper-pagination-bullets,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction {
+        bottom: 12%;
+        width: 100%;
+    }
 }

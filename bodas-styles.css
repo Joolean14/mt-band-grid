@@ -17,20 +17,7 @@ body {
     margin: 0%;
 }
 
-.nuestros-servicios {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 20% 80%;
-    grid-template-areas:
-        'title'
-        'card-container';
-    background-color: #827251;
-    height: 100%;
-    width: 100%;
-}
-
 .light-title {
-    grid-area: title;
     font-family: Glacial;
     color: #fffef9;
     border-bottom: solid 7px #fffef9;
@@ -40,137 +27,104 @@ body {
     align-self: center;
 }
 
-
-
 .dark-title {
-    grid-area: title;
-    display: inline-block;
     font-family: Glacial;
     color: #827251;
     border-bottom: solid 7px #827251;
     font-size: 4vw;
     width: max-content;
-    justify-self: center;
-    align-self: center;
+    
+}
+
+/* ===NUESTROS SERVICIOS====================================================================================== */
+
+.nuestros-servicios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #827251;
+    min-height: 100vh;
+    width: 100%;
+    padding: 2%;
 }
 
 .card-container {
-    grid-area: card-container;
-    display: grid;
-    grid-template-columns: 33.3% 33.3% 33.3%;
-    grid-template-rows: 100%;
-    grid-template-areas:
-        'card1 card2 card3';
     padding: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .card {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 40% 60%;
-    grid-template-areas:
-        'card-image'
-        'card-text';
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
     font-family: Glacial;
     color: #fffef9;
-    padding: 2%;
-
-}
-
-.card1 {
-    grid-area: card1;
-}
-
-.card2 {
-    grid-area: card2;
-}
-
-.card3 {
-    grid-area: card3;
-}
-
-.card-img {
-    grid-area: card-image;
-    width: 65%;
-    justify-self: center;
 }
 
 .card-text {
-    /* margin-top: 4%; */
-    text-align: center;
-    grid-area: card-text;
-    width: 65%;
-    justify-self: center;
-    align-self: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 80%;
 
 }
 
-/* ========================================================================================== */
+.card-img {
+    display: flex;
+    width: 70%;
+    height: 70%;
+}
+
+
+/* ====TESTIMONIOS==================================================================================== */
 
 .testimonios {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 20% 80%;
-    grid-template-areas:
-        'title'
-        'video-card-container';
-    height: 100%;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
     background-color: #fffef9;
-}
-
-.video-card-container {
-    grid-area: video-card-container;
-    display: grid;
-    grid-template-columns: 33.3% 33.3% 33.3%;
-    grid-template-rows: 100%;
-    grid-template-areas:
-        'video-card1 video-card2 video-card3';
+    min-height: 100%;
+    width: 100%;
     padding: 2%;
 }
 
+.video-card-container {
+    display: flex;
+    justify-content: space-around;
+}
+
 .video-card {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 50% 50%;
-    grid-template-areas:
-        'video'
-        'video-card-text';
-    font-family: Glacial;
-    color: #fffef9;
-    grid-area: video-card-container;
     padding: 2%;
     text-align: center;
     font-family: Glacial;
     color: #827251;
-}
-
-.video-card1 {
-    grid-area: video-card1;
-}
-
-.video-card2 {
-    grid-area: video-card2;
-}
-
-.video-card3 {
-    grid-area: video-card3;
+    width: 100%;
 }
 
 iframe {
-    grid-area: video;
-    width: auto !important;
-    height: 100% !important;
-    justify-self: center;
+    width: 100% !important;
+    height: auto !important;
 }
 
 .video-card-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    grid-area: video-card-text;
+
 }
 
 
-/* ============================================================================================ */
+/* ======CONTACTO====================================================================================== */
 
 .contacto {
     display: grid;
@@ -190,6 +144,7 @@ iframe {
     grid-template-areas:
         'title'
         'form';
+
     padding: 5%;
 }
 
@@ -204,7 +159,6 @@ form {
 }
 
 
-
 input[type=text] {
     border: none;
     border-bottom: 4px solid #fffef9;
@@ -215,7 +169,6 @@ input[type=text] {
 label {
     color: #fffef9;
     font-family: Glacial;
-    /* margin-bottom: 2%; */
     font-size: 1.5vw;
 }
 
@@ -246,125 +199,115 @@ label {
 
 
 
+/* TABLET |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
 
+@media only screen and (max-width: 1024px) {
 
-@media only screen and (max-width: 768px) {
-    .nuestros-servicios {
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: repeat(3, minmax(80%, 100%));
-        grid-template-areas:
-            'title'
-            'card-container';
-        background-color: #827251;
-        height: auto;
-        width: 100%;
-    }
-
-    .light-title {
-        font-size: 8vw;
-    }
-
-    .dark-title {
-        font-size: 8vw;
-    }
-
-    .card-container {
-        grid-area: card-container;
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: repeat(auto-fit, minmax(80%, 100%));
-        grid-template-areas:
-            'card1 card2 card3';
-        padding: 2%;
-    }
-
-    .card {
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 50% 50%;
-        grid-template-areas:
-            'card-image'
-            'card-text';
-        font-family: Glacial;
-        color: #fffef9;
-        grid-area: card1;
-        padding: 2%;
-
-    }
-
-    .card1 {
-        grid-area: card1;
-    }
-
-    .card2 {
-        grid-area: card2;
-    }
-
-    .card3 {
-        grid-area: card3;
-    }
-
-    .card-img {
-        grid-area: card-image;
-        width: 90%;
-    }
-
-    .card-text {
-        text-align: center;
-        grid-area: card-text;
+    .video-card-container {
+        display: flex;
+        flex-direction: column;
     }
 
 
-    .contacto {
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 100%;
-        grid-template-areas:
-            'contact-content';
-        background-image: url(img/contacto.jpg);
-        opacity: 0.5;
 
-    }
-
+    
     .contact-content {
-        display: grid;
+        grid-area: contact-content  ;
         grid-template-columns: 100%;
         grid-template-rows: 25% 75%;
         grid-template-areas:
             'title'
             'form';
     }
-
+    
     form {
         grid-area: form;
         width: 90%;
         height: 90%;
+        max-height: inherit;
         display: flex;
         flex-direction: column;
-        justify-content: start;
-        align-items: center;
+        justify-content: space-around;
+        align-self: center;
+        padding: 2%;
     }
-
-
-
+    
     input[type=text] {
         margin: 2%;
     }
-
+    
     label {
-        font-size: 5vw;
+        font-size: 3vw;
         color: #fffef9;
     }
 
     .send-button {
-        font-size: 8vw;
+        font-size: 4vh;
         margin: 2%;
     }
 
-    .form-img {
-        display: none;
-    }
+    
 }
 
-@media only screen and (min-width: 1024px) {}
+
+/* CELULAR |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+
+    @media only screen and (max-width: 768px) {
+
+
+        .card-container {
+            display: flex;
+            flex-direction: column;
+            }
+               
+    /* ==============CONTACTO================================================================ */
+        .contacto {
+            grid-template-areas:
+                'contact-content';
+            background-image: url(img/contacto.jpg);
+            opacity: 0.5;
+            grid-template-columns: 100%;
+            grid-template-rows: 100%;
+            grid-template-areas:
+                'contact-content';
+        }
+    
+        .contact-content {
+            grid-area: contact-content  ;
+            grid-template-columns: 100%;
+            grid-template-rows: 25% 75%;
+            grid-template-areas:
+                'title'
+                'form';
+        }
+    
+        form {
+            grid-area: form;
+            width: 90%;
+            height: 90%;
+            max-height: inherit;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-self: center;
+            padding: 2%;
+        }
+    
+        input[type=text] {
+            margin: 2%;
+        }
+    
+        label {
+            font-size: 5vw;
+            color: #fffef9;
+        }
+    
+        .send-button {
+            font-size: 4vh;
+            margin: 2%;
+        }
+    
+        .form-img {
+            display: none;
+        }
+    }
