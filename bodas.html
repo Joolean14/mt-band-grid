@@ -51,7 +51,7 @@
     </div>
 
 
-<!-- ============================================================================================= -->
+    <!-- ============================================================================================= -->
 
 
     <div class="testimonios">
@@ -88,34 +88,58 @@
     </div>
 
 
-<!-- ========================================================================================== -->
+    <!-- ========================================================================================== -->
 
     <div class="contacto">
         <div class="contact-content">
             <h2 class="light-title">CONTACTO</h2>
-            <form action="https://formsubmit.co/your@email.com">
-                <label for="nombre">Nombre</label>
-                <input name="nombre" type="text">
+            <form id="form" action="https://formsubmit.co/aaaa@333333r.co" method="POST">
+                <div class="form-control">
+                    <label for="nombre">Nombre</label>
+                    <input name="nombre" type="text" id="userName">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
                 <br>
-                <label for="celular">Celular</label>
-                <input name="celular" type="text">
+                <div class="form-control">
+                    <label for="celular">Celular</label>
+                    <input name="celular" type="text" id="mobile">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
                 <br>
-                <label for="correo">Correo electrónico</label>
-                <input name="correo" type="text">
+                <div class="form-control">
+                    <label for="correo">Correo electrónico</label>
+                    <input name="correo" type="text" id="email">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
                 <br>
-                <label for="tipoEvento">Tipo de evento</label>
-                <input name="tipoEvento" type="text">
+                <div class="form-control">
+                    <label for="tipoEvento">Tipo de evento</label>
+                    <input name="tipoEvento" type="text" id="eventType">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
                 <br>
-                <label for="fecha">Fecha del Evento</label>
-                <input name="fecha" type="text">
+                <div class="form-control">
+                    <label for="fecha">Fecha del Evento</label>
+                    <input name="fecha" type="text" id="date">
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
                 <br>
                 <button class="send-button" type="submit">ENVIAR</button>
             </form>
         </div>
         <img class="form-img" src="img/contacto.jpg" alt="">
     </div>
-
-
+    <script src="https://kit.fontawesome.com/98ca127883.js" crossorigin="anonymous"></script>
     <script src="form.js"></script>
 </body>
 
