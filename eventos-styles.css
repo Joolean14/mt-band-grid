@@ -25,24 +25,6 @@
     width: 100%;
 }
 
-.light-title {
-    grid-area: title;
-    font-family: Glacial;
-    color: #fffef9;
-    border-bottom: solid 2px #fffef9;
-    text-align: center;
-    font-size: 4vw;
-}
-
-.dark-title {
-    grid-area: title;
-    display: inline-block;
-    font-family: Glacial;
-    color: #827251;
-    border-bottom: solid 2px #827251;
-    text-align: center;
-    font-size: 4vw;
-}
 
 .swiper-container {
     grid-area: swiper;
@@ -80,15 +62,7 @@
 
 
 @media only screen and (max-width: 1024px) {
-    .light-title {
-        font-size: 8vw;
-    }
-
-    .dark-title {
-
-        font-size: 8vw;
-    }
-
+  
     .swiper-container-horizontal>.swiper-pagination-bullets,
     .swiper-pagination-custom,
     .swiper-pagination-fraction {

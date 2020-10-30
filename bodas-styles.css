@@ -33,6 +33,8 @@ body {
     border-bottom: solid 7px #827251;
     font-size: 4vw;
     width: max-content;
+    justify-self: center;
+    align-self: center;
     
 }
 

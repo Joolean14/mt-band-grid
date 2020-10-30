@@ -4,16 +4,14 @@ const mobile = document.getElementById('mobile');
 const email = document.getElementById('email');
 const eventType = document.getElementById('eventType');
 const date = document.getElementById('date');
-
-
-
+const agree = document.getElementById('agree');
 
 
 form.addEventListener('submit', e => {
     e.preventDefault()
     checkInputs();
     errors = document.getElementsByClassName('error') // Cuenta los campos con error
-    if (errors.length === 0) {
+    if (errors.length === 0){
         form.submit();
         // alert() o mensaje de que ya todo fue exitoso
         // limpiasForm()
@@ -26,15 +24,17 @@ function checkInputs() {
     const emailValue = email.value.trim();
     const eventTypeValue = eventType.value.trim();
     const dateValue = date.value.trim();
+
+
     if (userNameValue === '') {
         setErrorFor(userName, 'Nombre no puede estar vacío');
     } else {
         setSuccessFor(userName);
     }
     if (mobileValue === '') {
-        setErrorFor(mobileValue, 'Celular no puede estar vacío');
+        setErrorFor(mobile, 'Celular no puede estar vacío');
     } else {
-        setSuccessFor(mobileValue);
+        setSuccessFor(mobile);
     }
     if (emailValue === '') {
         setErrorFor(email, 'Email no puede estar vacío');
@@ -44,15 +44,15 @@ function checkInputs() {
         setSuccessFor(email);
     }
     if (eventTypeValue === '') {
-        setErrorFor(message, 'Mensaje no puede estar vacío');
+        setErrorFor(eventType, 'Tipo de evento no puede estar vacío');
     } else {
-        setSuccessFor(message);
+        setSuccessFor(eventType);
     }
     if (dateValue === '') {
-        setErrorFor(dateValue, 'Fecha no puede estar vacío');
+        setErrorFor(date, 'Tipo de evento no puede estar vacío');
     } else {
-        setSuccessFor(dateValue);
-    }
+        setSuccessFor(date);
+    }    
 }
 
 function setErrorFor(input, message) {
@@ -70,3 +70,6 @@ function setSuccessFor(input) {
 function isEmail(email) {
     return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
 }
+
+
+
