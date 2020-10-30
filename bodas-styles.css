@@ -160,7 +160,7 @@ form {
 }
 
 
-input[type=text] {
+input[type=text], input[type=email] {
     border: none;
     border-bottom: 4px solid #fffef9;
     background-color: transparent;
