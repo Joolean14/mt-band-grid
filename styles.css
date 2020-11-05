@@ -29,8 +29,8 @@ body {
     grid-template-columns: 50% 50%;
     grid-template-rows: 50% 50%;
     grid-template-areas:
-    'logo blank'
-    'buttons text';
+        'logo blank'
+        'buttons text';
     background-image: url(img/home.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -52,6 +52,11 @@ body {
     align-self: last-baseline;
     background-image: url(img/triangle.svg);
     background-repeat: no-repeat;
+}
+
+.controlling-parent {
+    overflow: hidden;
+
 }
 
 
@@ -140,12 +145,14 @@ span {
             'logo'
             'buttons'
             'text';
+        /* background-image: url(img/home.jpg); */
         background-image: url(img/home.jpg);
+
         background-repeat: no-repeat;
         background-size: cover;
     }
 
-  
+
     .triangle-bottom-right {
         top: 42%;
         left: 1%;
@@ -194,17 +201,15 @@ span {
             'buttons'
             'text';
         background-image: url(img/home.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
     }
 
- 
+
     .triangle-bottom-right {
         top: 42%;
-        left: 1%;
-        height: 9%;
+        left: 0%;
+        /* height: 9%; */
         border-bottom: 49vh solid #827251;
-        border-left: 99vw solid transparent;
+        border-left: 115vw solid transparent;
         overflow: hidden;
     }
 
@@ -223,7 +228,7 @@ span {
     }
 
     .main-description {
-        width: 45%;
+        width: 56%;
         font-size: 2.85vw;
         align-self: end;
         justify-self: end;
