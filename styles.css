@@ -56,7 +56,6 @@ body {
 
 .controlling-parent {
     overflow: hidden;
-
 }
 
 
@@ -208,8 +207,8 @@ span {
         top: 42%;
         left: 0%;
         /* height: 9%; */
-        border-bottom: 49vh solid #827251;
-        border-left: 115vw solid transparent;
+        border-bottom: 55vh solid #827251;
+        border-left: 100vw solid transparent;
         overflow: hidden;
     }
 
