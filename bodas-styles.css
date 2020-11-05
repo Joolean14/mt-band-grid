@@ -48,6 +48,7 @@ body {
     min-height: 100vh;
     max-width: 100%;
     padding: 2%;
+    overflow-x: hidden;
 }
 
 .card-container {
@@ -68,12 +69,12 @@ body {
 }
 
 .card-text {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 80%;
 
 }
 
@@ -102,7 +103,8 @@ body {
     background-color: #fffef9;
     min-height: 100%;
     width: 100%;
-    padding: 2%;
+    /* padding: 2%; */
+    overflow-x: hidden;
 }
 
 .video-card-container {
@@ -167,7 +169,8 @@ form {
 }
 
 
-input[type=text], input[type=email] {
+input[type=text],
+input[type=email] {
     border: none;
     border-bottom: 4px solid #fffef9;
     background-color: transparent;
@@ -206,48 +209,48 @@ label {
 
 /* ======FORM CONTROLS============================================================== */
 
-.form-control input:focus {    
+.form-control input:focus {
     border-bottom: 4px solid #b8b6af;
-  }
-  
-  .form-control.success input {
+}
+
+.form-control.success input {
     border-color: #2ecc71;
-  }
-  
-  .form-control.error input {
+}
+
+.form-control.error input {
     border-color: #e74c3c;
-  }
-  
-  .form-control i {
+}
+
+.form-control i {
     visibility: hidden;
     position: absolute;
     top: 40px;
     right: 10px;
-  }
-  
+}
+
 .form-control.success i.fa-check-circle {
     color: #2ecc71;
     visibility: visible;
-  }
-  
-  .form-control.error i.fa-exclamation-circle {
+}
+
+.form-control.error i.fa-exclamation-circle {
     color: #e74c3c;
     visibility: visible;
-  }
-  
-  .form-control small {
+}
+
+.form-control small {
     color: #e74c3c;
     position: absolute;
     bottom: 0;
     left: 0;
     visibility: hidden;
-  }
-  
-  .form-control.error small {
-    visibility: visible;
-  }
+}
 
-  
+.form-control.error small {
+    visibility: visible;
+}
+
+
 
 /* TABLET |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
 
@@ -258,16 +261,16 @@ label {
         flex-direction: column;
     }
 
-    
+
     .contact-content {
-        grid-area: contact-content  ;
+        grid-area: contact-content;
         grid-template-columns: 100%;
         grid-template-rows: 25% 75%;
         grid-template-areas:
             'title'
             'form';
     }
-    
+
     form {
         grid-area: form;
         width: 90%;
@@ -279,11 +282,11 @@ label {
         align-self: center;
         padding: 2%;
     }
-    
+
     input[type=text] {
         margin: 2%;
     }
-    
+
     label {
         font-size: 3vw;
         color: #fffef9;
@@ -294,83 +297,83 @@ label {
         margin: 2%;
     }
 
-    
+
 }
 
 
 /* CELULAR |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
 
-    @media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
 
-        .light-title {
-            font-size: 8.3vw;
-        }
-        
-        .dark-title {
-            font-size: 8.3vw;
-        }
-
-        .card-title {
-            font-size: 6vw;
-        }
-        
-        .card-description {
-            font-size: 4vw;
-        }
-
-        .card-container {
-            display: flex;
-            flex-direction: column;
-            }
-               
-    /* ==============CONTACTO================================================================ */
-        .contacto {
-            grid-template-areas:
-                'contact-content';
-            background-image: url(img/contacto.jpg);
-            opacity: 0.5;
-            grid-template-columns: 100%;
-            grid-template-rows: 100%;
-            grid-template-areas:
-                'contact-content';
-        }
-    
-        .contact-content {
-            grid-area: contact-content  ;
-            grid-template-columns: 100%;
-            grid-template-rows: 25% 75%;
-            grid-template-areas:
-                'title'
-                'form';
-        }
-    
-        form {
-            grid-area: form;
-            width: 90%;
-            height: 90%;
-            max-height: inherit;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-self: center;
-            padding: 2%;
-        }
-    
-        input[type=text] {
-            margin: 2%;
-        }
-    
-        label {
-            font-size: 5vw;
-            color: #fffef9;
-        }
-    
-        .send-button {
-            font-size: 4vh;
-            margin: 2%;
-        }
-    
-        .form-img {
-            display: none;
-        }
+    .light-title {
+        font-size: 8.3vw;
     }
+
+    .dark-title {
+        font-size: 8.3vw;
+    }
+
+    .card-title {
+        font-size: 6vw;
+    }
+
+    .card-description {
+        font-size: 4vw;
+    }
+
+    .card-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* ==============CONTACTO================================================================ */
+    .contacto {
+        grid-template-areas:
+            'contact-content';
+        background-image: url(img/contacto.jpg);
+        opacity: 0.5;
+        grid-template-columns: 100%;
+        grid-template-rows: 100%;
+        grid-template-areas:
+            'contact-content';
+    }
+
+    .contact-content {
+        grid-area: contact-content;
+        grid-template-columns: 100%;
+        grid-template-rows: 25% 75%;
+        grid-template-areas:
+            'title'
+            'form';
+    }
+
+    form {
+        grid-area: form;
+        width: 90%;
+        height: 90%;
+        max-height: inherit;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        padding: 2%;
+    }
+
+    input[type=text] {
+        margin: 2%;
+    }
+
+    label {
+        font-size: 5vw;
+        color: #fffef9;
+    }
+
+    .send-button {
+        font-size: 4vh;
+        margin: 2%;
+    }
+
+    .form-img {
+        display: none;
+    }
+}
