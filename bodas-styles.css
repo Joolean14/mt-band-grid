@@ -20,7 +20,7 @@ body {
 .light-title {
     font-family: Glacial;
     color: #fffef9;
-    border-bottom: solid 7px #fffef9;
+    border-bottom: solid 0.3vh #fffef9;
     font-size: 4vw;
     width: max-content;
     justify-self: center;
@@ -30,12 +30,11 @@ body {
 .dark-title {
     font-family: Glacial;
     color: #827251;
-    border-bottom: solid 7px #827251;
+    border-bottom: solid 0.3vh #827251;
     font-size: 4vw;
     width: max-content;
     justify-self: center;
     align-self: center;
-    
 }
 
 /* ===NUESTROS SERVICIOS====================================================================================== */
@@ -47,15 +46,15 @@ body {
     justify-content: space-evenly;
     background-color: #827251;
     min-height: 100vh;
-    width: 100%;
+    max-width: 100%;
     padding: 2%;
 }
 
 .card-container {
     padding: 2%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
 }
 
 .card {
@@ -76,6 +75,14 @@ body {
         text-align: center;
         width: 80%;
 
+}
+
+.card-title {
+    font-size: 2vw;
+}
+
+.card-description {
+    font-size: 1.2vw;
 }
 
 .card-img {
@@ -295,6 +302,21 @@ label {
 
     @media only screen and (max-width: 768px) {
 
+        .light-title {
+            font-size: 8.3vw;
+        }
+        
+        .dark-title {
+            font-size: 8.3vw;
+        }
+
+        .card-title {
+            font-size: 6vw;
+        }
+        
+        .card-description {
+            font-size: 4vw;
+        }
 
         .card-container {
             display: flex;

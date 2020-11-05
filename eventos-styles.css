@@ -13,6 +13,9 @@
     src: url("font/glacial-indifference/GlacialIndifference-Bold.otf") format("opentype");
 }
 
+
+
+
 .conexiones-musicales {
     display: grid;
     grid-template-columns: 100%;
@@ -23,6 +26,8 @@
     background-color: #fffef9;
     height: 100%;
     width: 100%;
+    overflow-x: hidden;
+    /* border: red 2px solid; */
 }
 
 
@@ -45,8 +50,8 @@
 }
 
 .swiper-pagination-bullet {
-    width: 15px;
-    height: 15px;
+    width: 20px;
+    height: 20px;
 }
 
 .swiper-container-horizontal>.swiper-pagination-bullets,
