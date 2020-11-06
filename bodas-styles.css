@@ -35,6 +35,8 @@ body {
     width: max-content;
     justify-self: center;
     align-self: center;
+    z-index: 1;
+    /* border: red 2px solid; */
 }
 
 /* ===NUESTROS SERVICIOS====================================================================================== */
@@ -107,6 +109,14 @@ body {
     overflow-x: hidden;
 }
 
+.dark-flower {
+    margin: -10% 57% -28% -19%;
+    /* border: firebrick 2px solid; */
+    z-index: 1;
+    padding: 2%;
+    width: 11%;
+}
+
 .video-card-container {
     display: flex;
     justify-content: space-around;
@@ -140,6 +150,7 @@ body {
     right: 0;
     width: 100%;
     height: 100%;
+    z-index: 1;
   }
 
 
@@ -249,9 +260,9 @@ label {
 
 /* ======FORM CONTROLS============================================================== */
 
-.form-control input:focus {
+/* .form-control input:focus {
     border-bottom: 4px solid #b8b6af;
-}
+} */
 
 .form-control.success input {
     border-color: #2ecc71;
@@ -295,6 +306,10 @@ label {
 /* TABLET |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
 
 @media only screen and (max-width: 1024px) {
+
+    .dark-flower {
+        visibility: hidden;
+    }
 
     .video-card-container {
         display: flex;
