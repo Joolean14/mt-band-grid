@@ -81,7 +81,6 @@ body {
     font-family: Glacial;
     font-size: 4vw;
     background-color: rgb(130, 114, 81, 0.7);
-    cursor: pointer;
     border: none;
     margin-right: 2%;
     width: auto;
@@ -89,6 +88,7 @@ body {
     justify-self: center;
     align-self: center;
     text-decoration: none;
+    z-index: 20;
 }
 
 .wedding-button {
@@ -151,9 +151,7 @@ span {
             'logo'
             'buttons'
             'text';
-        /* background-image: url(img/home.jpg); */
         background-image: url(img/home.jpg);
-
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -176,8 +174,6 @@ span {
         grid-area: text;
         width: 100%;
         height: 100%;
-        /* border: chartreuse solid 4px; */
-        /* padding-right: 6%; */
     }
 
     .main-description {
@@ -186,7 +182,6 @@ span {
         align-self: end;
         justify-self: end;
         padding: 2%;
-        /* border: 4px solid red; */
     }
 
     .home-button {
