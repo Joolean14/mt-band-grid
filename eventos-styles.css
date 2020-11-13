@@ -14,7 +14,7 @@
 }
 
 .light-flower {
-    margin: -12% 0% -19% -82%;
+    margin: -8% -4% 9% -82%;
     border: firebrick 2px solid;
     z-index: 1;
     /* padding: 2%; */
@@ -22,7 +22,7 @@
 }
 
 .light-flower-flipped {
-    margin: 25% -26% -51% 62%;
+    margin: 1% -20% -48% 62%;
     border: forestgreen 2px solid;
     z-index: 1;
     transform: rotate(180deg);
