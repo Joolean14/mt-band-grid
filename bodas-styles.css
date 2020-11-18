@@ -47,10 +47,10 @@ body {
     align-items: center;
     justify-content: space-evenly;
     background-color: #827251;
-    min-height: 100vh;
-    max-width: 100%;
+    /* min-height: 100vh; */
+    /* max-width: 100%; */
     padding: 2%;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 .card-container {
