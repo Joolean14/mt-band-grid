@@ -6,6 +6,14 @@ const eventType = document.getElementById('eventType');
 const date = document.getElementById('date');
 const agree = document.getElementById('agree');
 
+if(/Android/.test(navigator.appVersion)) {
+    window.addEventListener("resize", function() {
+      if(document.activeElement.tagName=="INPUT" || document.activeElement.tagName=="TEXTAREA") {
+        document.activeElement.scrollIntoView();
+      }
+   })
+ } 
+
 
 form.addEventListener('submit', e => {
     e.preventDefault()
@@ -70,6 +78,8 @@ function setSuccessFor(input) {
 function isEmail(email) {
     return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
 }
+
+
 
 
 
