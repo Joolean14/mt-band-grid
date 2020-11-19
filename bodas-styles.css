@@ -59,6 +59,7 @@ body {
 
 .light-flower {
     margin: 0% 0% 12% -73%;
+    width: 15%;
     /* border: firebrick 2px solid; */
     /* z-index: 1; */
     /* padding: 2%; */
@@ -67,6 +68,7 @@ body {
 
 .light-flower-flipped {
     margin: 0% -78% -36% 0%;
+    width: 15%;
     /* border: forestgreen 2px solid; */
     /* z-index: 1; */
     transform: rotate(180deg);
@@ -310,55 +312,7 @@ label {
 
 /* TABLET |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
 
-@media only screen and (max-width: 1024px) {
 
-    .dark-flower {
-        visibility: hidden;
-    }
-
-    .video-card-container {
-        display: flex;
-        flex-direction: column;
-    }
-
-
-    .contact-content {
-        grid-area: contact-content;
-        grid-template-columns: 100%;
-        grid-template-rows: 25% 75%;
-        grid-template-areas:
-            'title'
-            'form';
-    }
-
-    form {
-        grid-area: form;
-        width: 90%;
-        height: 90%;
-        max-height: inherit;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-self: center;
-        padding: 2%;
-    }
-
-    input[type=text] {
-        margin: 2%;
-    }
-
-    label {
-        font-size: 3vw;
-        color: #fffef9;
-    }
-
-    .send-button {
-        font-size: 4vh;
-        margin: 2%;
-    }
-
-
-}
 
 
 /* CELULAR |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
