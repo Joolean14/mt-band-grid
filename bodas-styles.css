@@ -18,23 +18,26 @@ body {
 }
 
 .light-title {
+    display: flex;
     font-family: Glacial;
     color: #fffef9;
-    border-bottom: solid 0.3vh #fffef9;
+    border-bottom: solid 0.5vh #fffef9;
     font-size: 4vw;
     width: max-content;
-    justify-self: center;
-    align-self: center;
+    justify-content: center;
+    margin: 5.5% 0 0% 0;
+    padding: 0 0 1% 0;
+    /* border: red 2px solid; */
 }
 
 .dark-title {
+    display: flex;
     font-family: Glacial;
     color: #827251;
     border-bottom: solid 0.3vh #827251;
     font-size: 4vw;
     width: max-content;
-    justify-self: center;
-    align-self: center;
+    justify-content: center;
     z-index: 1;
     /* border: red 2px solid; */
 }
@@ -49,49 +52,75 @@ body {
     background-color: #827251;
     /* min-height: 100vh; */
     /* max-width: 100%; */
-    padding: 2%;
+    /* padding: 2%; */
     /* overflow-x: hidden; */
+    /* border: blue 2px solid; */
+}
+
+.light-flower {
+    margin: 0% 0% 12% -73%;
+    /* border: firebrick 2px solid; */
+    /* z-index: 1; */
+    /* padding: 2%; */
+    /* width: 11%; */
+}
+
+.light-flower-flipped {
+    margin: 0% -78% -36% 0%;
+    /* border: forestgreen 2px solid; */
+    /* z-index: 1; */
+    transform: rotate(180deg);
 }
 
 .card-container {
-    padding: 2%;
+    /* padding: 2%; */
     display: flex;
+    justify-content: space-between;
+    width: 83%;
+    margin: 6% 0 8% 0;
     /* justify-content: center;
     align-items: center; */
+    /* border: red 2px solid; */
 }
 
 .card {
-    padding: 2%;
+    /* padding: 2%; */
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    width: 30%;
     font-family: Glacial;
     color: #fffef9;
-}
-
-.card-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 80%;
-
-}
-
-.card-title {
-    font-size: 2vw;
-}
-
-.card-description {
-    font-size: 1.2vw;
+   /*  border: yellow 2px solid; */
 }
 
 .card-img {
     display: flex;
-    width: 70%;
-    height: 70%;
+    width: 80%;
+    /* height: 70%; */
+}
+.card-text {
+    display: flex;
+    flex-direction: column;
+    
+    text-align: center;
+    /* align-items: none; */
+    /* justify-content: center; */
+    width: 105%;
+    /* border: green 2px solid; */
+}
+.card-title {
+    font-family: Glacial-Bold;
+    font-size: 1.5vw;
+    /* border: pink 2px solid; */
+    margin: 5% 0 4%;
+}
+
+.card-description {
+    font-size: 1.2vw;
+    width: 100%;
+    /* border: red 2px solid; */
+    margin: 0 auto 0;
 }
 
 
