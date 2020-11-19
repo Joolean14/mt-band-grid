@@ -412,6 +412,7 @@ label {
         justify-content: center;
         align-self: center;
         padding: 2%;
+        overscroll-behavior-y: contain;
     }
 
     input[type=text] {
