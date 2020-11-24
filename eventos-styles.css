@@ -14,20 +14,24 @@
 }
 
 .light-flower {
-    margin: -8% -4% 9% -82%;
-    border: firebrick 2px solid;
-    z-index: 1;
-    /* padding: 2%; */
-    /* width: 11%; */
+    z-index: -1;
+    
 }
 
 .light-flower-flipped {
-    margin: 1% -20% -48% 62%;
-    border: forestgreen 2px solid;
-    z-index: 1;
-    transform: rotate(180deg);
+
+    z-index: -1;
+ 
 }
 
+.line {
+    width: 46%;
+    /* height: 5%; */
+    border-top: white 0.2vh solid;
+    margin: -5% 0 5% 0;
+}
+
+/* conexiones musicales :::::::::::::::::::::::::::::::::::*/
 
 .conexiones-musicales {
     display: grid;
@@ -96,5 +100,9 @@
     .swiper-pagination-fraction {
         bottom: 12%;
         width: 100%;
+    }
+
+    .line {
+        z-index: -1;
     }
 }
