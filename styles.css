@@ -15,20 +15,23 @@
 
 
 body {
+    background-color: black;
     display: block;
     margin: 0;
     padding: 0;
-    width: 100%;
-    height: 100%;
+    /* bottom: 0; */
+    /* width: 100%; */
+    /* height: 100%; */
     /* overflow: hidden; */
     background-image: url(img/home.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 99%;
 }
 
 .macro {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     /* width: 100%;
     height: auto; */
     border: pink solid 5px;
@@ -41,7 +44,7 @@ body {
 .main-container {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 25%;
     /* justify-content: space-around; */
     /* overflow: hidden; */
     border: green solid 3px;
@@ -55,13 +58,13 @@ body {
 } */
 
 .logo-img {
-    width: 45%;
-    margin: 10% 0% 23% 10%;
+    width: 90%;
+    margin: 30% 0% 42% 25%;
     /* justify-content: center; */
     /* align-items: center;  */   
     background-image: url(img/triangle.svg);
     background-repeat: no-repeat;
-    border: 3px solid blue;
+    /* border: 3px solid blue; */
 }
 
 
@@ -69,9 +72,9 @@ body {
 
     display: flex;
     justify-content: space-between;
-    margin: 0 0 5% 10%;
+    margin: 0 0 12% 25%;
     border: red 2px solid;
-    width: 65%;
+    width: 130%;
 }
 
 .home-button {
@@ -107,24 +110,58 @@ body {
     border: yellow solid 4px;
 } */
 
-.triangulo-grande {
+/* .triangulo-grande {
     display: flex;
-    /* text-align: right; */
-    width: 50%;
+    position: absolute;
+    text-align: right;
+    width: 70%;
+    margin: 0 0% 0% 30%;
+ 
     background-image: url(img/triangle2.svg);
     background-repeat: no-repeat;
     border: red solid 3px;
+} */
+
+.triangulo-grande {
+    width: 67%;
+    /* position: absolute; */
+    /* margin: 0% 0% 0% 0%; */
+    border: red solid 3px;
+}
+
+/* .div-triangle {
+    width: 100vw;
+    height: 100vh;
+    background-color: yellow;
+    opacity: 0.2;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+} */
+
+.div-triangle2 {
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255, 219, 153);
+    opacity: 0.3;
+    clip-path: polygon(100% 0, 0% 100vh, 100vw 100vh);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: center;  */
+
+    
+
 }
 
 .main-description-text {
     font-family: Glacial;
-    font-size: 1.5vw;
+    font-size: 1.9vw;
     text-align: right;
-    width: 60%;
+    width: 55%;
     text-shadow: 2px 3px 20px #000;
 
-    margin: 65% 0 5% 33%;
-    padding: 0 0 0 0;
+    margin: -35% 0 0% 40%;
+    padding: 0%;
     
     color: #fffef9;
     border: 4px solid blue;
