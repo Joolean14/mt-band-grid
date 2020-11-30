@@ -34,30 +34,26 @@
 /* conexiones musicales :::::::::::::::::::::::::::::::::::*/
 
 .conexiones-musicales {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 20% 80%;
-    grid-template-areas:
-        'title'
-        'swiper';
+    display: flex;
+    flex-direction: column;
     background-color: #fffef9;
-    height: 100%;
-    width: 100%;
-    overflow-x: hidden;
-    /* border: red 2px solid; */
+    /* height: 100%;
+    width: 100%; */
+    /* overflow-x: hidden; */
+    border: red 2px solid;
 }
 
 
 .swiper-container {
-    grid-area: swiper;
-    width: 100%;
+    width: 80%;
     padding-top: 4%;
     padding-bottom: 14%;
+    /* border: blue 10px solid; */
 }
 
-.swiper-wrapper {
+/* .swiper-wrapper {
     height: 50%;
-}
+} */
 
 .swiper-slide {
     background-position: center;
