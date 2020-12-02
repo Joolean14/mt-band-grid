@@ -10,6 +10,12 @@
 
 <body>
 
+    <div class="back-button-container">
+        <a class="back-button" href="index.html">
+            <i class="fas fa-chevron-left"></i>
+        </a>
+    </div>
+
     <div class="nuestros-servicios">
         <h2 class="light-title">NUESTROS SERVICIOS</h2>
         <img class="light-flower" src="img/flor-clara.png" alt="">
@@ -29,7 +35,7 @@
                 </div>
             </div>
             <div class="card">
-                <img class="card-img" src="img/coctel.jpeg" alt="">
+                <img class="card-img" src="img/coctel.jpg" alt="">
                 <div class="card-text">
                     <h3 class="card-title">Coctel</h3>
                     <p class="card-description">MT band ofrece diferentes formatos para acompañar esta celebración, que
@@ -42,7 +48,7 @@
             <div class="card">
                 <img class="card-img" src="img/recepcion-fiesta.jpg" alt="">
                 <div class="card-text">
-                    <h3 class="card-title">Rumba</h3>
+                    <h3 class="card-title">Fiesta</h3>
                     <p class="card-description">Para llenar tu recepción de alegría y magia, MT Band te ofrece un amplio
                         repertorio con lo mejor
                         de
@@ -109,7 +115,7 @@
     <div class="contacto">
         <div class="contact-content">
             <h2 class="light-title">CONTACTO</h2>
-            <form id="form" class="form" action="https://formsubmit.co/contacto@solofjweoivalencia.co" method="POST">
+            <form id="form" class="form" action="https://formsubmit.co/grupomusicalmatices@gmail.com" method="POST">
                 <div class="form-control">
                     <label for="nombre">Nombre</label>
                     <input type="text" id="userName" name="nombre" />
@@ -131,12 +137,14 @@
                     <input type="text" id="date" name="date" />
                 </div>
                 <button class="send-button" type="submit">Enviar</button>
+                <input type="hidden" name="_next" value="https://mtband.co/index.html">
             </div>
         <img class="form-img" src="img/contacto.jpg" alt="">
     </div>
-    
+
     <script src="https://kit.fontawesome.com/98ca127883.js" crossorigin="anonymous"></script>
     <script src="form.js"></script>
+    <script src="back-button.js"></script>
 </body>
 
 </html>

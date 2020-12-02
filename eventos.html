@@ -11,13 +11,20 @@
 </head>
 
 <body>
+
+    <div class="back-button-container">
+        <a class="back-button" href="index.html">
+            <i class="fas fa-chevron-left"></i>
+        </a>
+    </div>
+
     <div class="nuestros-servicios">
         <h2 class="light-title">NUESTROS SERVICIOS</h2>
         <img class="light-flower" src="img/flor-clara.png" alt="">
         <img class="light-flower-flipped" src="img/flor-clara.png" alt="">
         <div class="card-container">
             <div class="card">
-                <img class="card-img" src="img/ceremonia.jpg" alt="">
+                <img class="card-img" src="img/ceremonia-eventos.jpg" alt="">
                 <div class="card-text">
                     <h3 class="card-title">Eucaristías</h3>
                     <p class="card-description">Una amenizacion que conecta el alma en un viaje sonoro, con un cuarteto que combina la elegancia
@@ -29,14 +36,14 @@
                 </div>
             </div>
             <div class="card">
-                <img class="card-img" src="img/coctel.jpg" alt="">
+                <img class="card-img" src="img/eventos-sociales.jpg" alt="">
                 <div class="card-text">
                     <h3 class="card-title">Eventos Sociales</h3>
                     <p class="card-description">MT band ofrece diferentes formatos para acompañar esta celebración, que denota intimidad y alegría, con un ambiente muy familiar (Cumpleaños, aniversarios, grados, entre otras).</p>
                 </div>
             </div>
             <div class="card">
-                <img class="card-img" src="img/recepcion-fiesta.jpg" alt="">
+                <img class="card-img" src="img/bateria.jpg" alt="">
                 <div class="card-text">
                     <h3 class="card-title">Eventos Corporativos</h3>
                     <p class="card-description">Porque tu empresa merece lo mejor, MT Band  ofrece un amplio repertorio con lo mejor de la música crossover, DJ, Miniteca y mucho más, para que esa celebración, conecte a  colaboradores, clientes y aliados en un espacio de alegría y entretenimiento.</p>
@@ -70,7 +77,7 @@
         <div class="contact-content">
             <h2 class="light-title">CONTACTO</h2>
 
-            <form id="form" class="form" action="https://formsubmit.co/contacto@solofjweoivalencia.co" method="POST">
+            <form id="form" class="form" action="https://formsubmit.co/grupomusicalmatices@gmail.com" method="POST">
                 <div class="form-control">
                     <label for="nombre">Nombre</label>
                     <input type="text" id="userName" name="nombre" />
@@ -92,18 +99,16 @@
                     <input type="text" id="date" name="date" />
                 </div>
                 <button class="send-button" type="submit">Enviar</button>
+                <input type="hidden" name="_next" value="https://mtband.co/index.html">
             </form>
         </div>
         <img class="form-img" src="img/contacto.jpg" alt="">
     </div>
     <script src="https://kit.fontawesome.com/98ca127883.js" crossorigin="anonymous"></script>
     <script src="form.js"></script>
-</body>
-
-
-<!-- ======================================================================== -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="swiper.js"></script>
+    <script src="back-button.js"></script>
 </body>
 
 </html>
