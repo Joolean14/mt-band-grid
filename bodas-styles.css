@@ -42,7 +42,7 @@ body {
     font-size: 4vw;
     width: max-content;
     justify-content: center;
-    margin: 4.5% 0 -6.3% 0;
+    margin: 4.5% 0 -1% 0;
     padding: 0 0 2% 0;
     /* z-index: 1; */
     /* border: red 2px solid; */
@@ -107,15 +107,17 @@ body {
     width: 85%;
     /* height: 70%; */
 }
+
 .card-text {
     display: flex;
-    flex-direction: column;   
+    flex-direction: column;
     text-align: center;
     /* align-items: none; */
     /* justify-content: center; */
     width: 105%;
     /* border: green 2px solid; */
 }
+
 .card-title {
     font-family: Glacial-Bold;
     font-size: 1.5vw;
@@ -181,7 +183,7 @@ body {
     padding-top: 59%;
 }
 
-  .responsive-iframe {
+.responsive-iframe {
     position: absolute;
     top: 0;
     left: 0;
@@ -190,7 +192,7 @@ body {
     width: 100%;
     height: 103%;
     border: none;
-  }
+}
 
 
 
@@ -203,16 +205,18 @@ body {
 
 
 }
+
 /* =================================================================== */
 
 .container {
     position: relative;
     width: 100%;
     overflow: hidden;
-    padding-top: 75%; /* 4:3 Aspect Ratio */
-  }
-  
-  
+    padding-top: 75%;
+    /* 4:3 Aspect Ratio */
+}
+
+
 
 
 /* ======CONTACTO====================================================================================== */
@@ -223,7 +227,9 @@ body {
 .contacto {
     display: flex;
     background-color: #827251;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    height: 100vh;
+
     /* border: blue 3px solid; */
 }
 
@@ -233,6 +239,7 @@ body {
     align-items: center;
     justify-content: space-evenly;
     width: 100%;
+    /* padding: 5% 0 5% 0; */
     /* border: red 3px solid; */
 
 }
@@ -241,9 +248,9 @@ form {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: flex-start;
     /* border: green 3px solid; */
-    width: 100%;
+    width: 60%;
     /* height: 100%; */
     /* padding: 8%; */
 }
@@ -255,15 +262,14 @@ input[type=email] {
     border: none;
     border-bottom: 2px solid #fffef9;
     background-color: transparent;
-    margin: 3%;
+    margin: 4% 0 4% 0;
     color: #fffef9;
-    /* width: 100%; */
 }
 
 label {
     color: #fffef9;
     font-family: Glacial-Bold;
-    font-size: 1vw;
+    font-size: 1.16vw;
 }
 
 .send-button {
@@ -271,14 +277,10 @@ label {
     font-size: 2vw;
     background-color: rgba(255, 254, 250, 0.3);
     color: #fffef9;
-    /* cursor: pointer; */
+    align-self: center;
     border: none;
     text-shadow: 2px 3px 20px #000;
-    margin-top: 3%;
-    /* width: auto;
-    height: auto; */
-    /* justify-self: center;
-    align-self: center; */
+    margin-top: 15%;
 }
 
 .send-button:hover {
@@ -321,9 +323,13 @@ label {
         margin: 12% 0 -7% 0;
     }
 
-    /* .dark-title {
-        font-size: 6vw;
-    } */
+    .dark-title {
+        font-size: 7vw;
+        /* font-weight: 500; */
+        margin: 12% 0 -11% 0;
+    }
+
+
 
     .card-title {
         font-size: 3.2vw;
@@ -337,21 +343,22 @@ label {
         /* padding: 2%; */
         /* width: 11%; */
     }
-    
+
     .light-flower-flipped {
         z-index: -1;
     }
-    
+
     .card-container {
         display: flex;
         flex-direction: column;
         align-items: center;
         padding-bottom: 5%;
     }
-    
+
     .card {
         width: 79%;
     }
+
     .card-description {
         font-size: 2.8vw;
         width: 100%;
@@ -364,112 +371,103 @@ label {
         /* height: 70%; */
     }
 
-/* TESTIMONIOS========================================= */
-.dark-title {
-    font-size: 7vw;
-    /* font-weight: 500; */
-    margin: 12% 0 -11% 0;
-}
-
-.dark-flower {
-    z-index: -1;
-}
-
-.video-card-container {
-    flex-direction: column;
-    align-items: center;
-    width: 68.5%;
-    margin: 0 0 13% 0;
-    /* padding-bottom: 5%; */
-    /* border: blue solid 2px; */
-}
-
-.video-card {
-    /* padding: 0 3%; */
-    margin: 0 3%;
-    text-align: center;
-    font-family: Glacial;
-    color: #827251;
-    width: 83%;
-    /* border: rgb(0, 255, 76) solid 2px; */
-}
+    /* TESTIMONIOS========================================= */
 
 
-.iframe-container {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    padding-top: 60%;
-    margin: 15% 0 0 0;
-    /* border: rgb(0, 255, 76) solid 2px; */
-}
+    .dark-flower {
+        z-index: -1;
+    }
 
-  .responsive-iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 103%;
-    border: none;
-  }
+    .video-card-container {
+        flex-direction: column;
+        align-items: center;
+        width: 68.5%;
+        margin: 0 0 13% 0;
+        /* padding-bottom: 5%; */
+        /* border: blue solid 2px; */
+    }
+
+    .video-card {
+        /* padding: 0 3%; */
+        margin: 0 3%;
+        text-align: center;
+        font-family: Glacial;
+        color: #827251;
+        width: 83%;
+        /* border: rgb(0, 255, 76) solid 2px; */
+    }
+
+
+    .iframe-container {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        padding-top: 60%;
+        margin: 15% 0 0 0;
+        /* border: rgb(0, 255, 76) solid 2px; */
+    }
+
+    .responsive-iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 103%;
+        border: none;
+    }
+
+    .contact-content {
+        justify-content: space-around;
+        width: 100%;
+        /* padding: 5% 0 5% 0; */
+        /* border: red 3px solid; */
+
+    }
+
 
 
     .contacto {
-    background-image: url('img/flor-clara-rotada.png');
-    background-size: 50%; 
-    background-repeat: no-repeat; 
-    background-position: center; 
-}
+        /* border: blue 3px solid; */
+        background-image: url('img/flor-clara-rotada.png');
+        background-size: 50%;
+        background-repeat: no-repeat;
+        background-position: center;
+        /* height: 90vh; */
+    }
 
     form {
+        margin-top: 5%;
         /* width: 90%;
-        height: 90%;
-        max-height: inherit;
-        display: flex; */
+        height: 90%; */
+        /* max-height: inherit;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-evenly;
         align-self: center;
-        padding: 2%;
+        padding: 2%; */
+        border: blue 2 px solid;
     }
 
     label {
         font-size: 3vw;
         color: #fffef9;
     }
+
     input[type=text] {
-        margin: 2%;
+        margin: 7%;
+        width: 70%;
     }
-    
+
     .send-button {
         font-size: 4vh;
-        margin: 2%;
+        /* margin: 2%; */
+        margin-top: 8%;
     }
+
 
     .form-img {
         display: none;
     }
 
 }
-
-
-
-/* ==============CONTACTO================================================================ */
-
-/* .contacto {
-    
-    background-image: url(img/contacto.jpg);
-    opacity: 0.5;
-  
-}
-
-.contact-content {
-  
-}
-
-
-
-
-
-*/
