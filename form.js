@@ -12,6 +12,8 @@ form.addEventListener('submit', e => {
     errors = document.getElementsByClassName('error');
     if (errors.length === 0){
         form.submit();
+        form.reset();
+        return false;
     }
 });
 
